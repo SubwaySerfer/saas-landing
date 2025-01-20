@@ -8,6 +8,7 @@
   <script src="https://unpkg.com/htmx.org"></script>
   <link rel="stylesheet" href="./src/style.css">
   <link rel="stylesheet" href="./src/reset.css">
+  <link rel="icon" href="/logo.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -22,15 +23,38 @@
       <button class="btn"><span class="btn-text">Get started</span></button>
       <img class="promo-img" src="assets/main-1.png" alt="main image.">
     </section>
-    <h1>Welcome to HTMX</h1>
-    <button hx-get="components/button.html" hx-trigger="click" hx-swap="afterend">Load Button</button>
+
+    <section class="partners">
+      <hr class="partners-hr">
+      <img src="assets/partners-small.png" loading="lazy" alt="partners logos.">
+      <hr class="partners-hr">
+    </section>
+
+    <section class="advantages">
+      <img src="assets/image-2.png" alt="app dashboard." class="advantages-img">
+      <ul class="advantages-list">
+        <li class="advantages-item">
+          <img src="assets/cards.svg" alt="">
+          <h2>Customizable card</h2>
+          <p>Custom your own card for your exact incomes and expenses needs.</p>
+        </li>
+        <li class="advantages-item"><img src="assets/coin.svg" alt="">
+          <h2>No payment fee</h2>
+          <p>Transfer your payment all over the world with no payment fee.</p>
+        </li>
+        <li class="advantages-item"><img src="assets/wallet.svg" alt="">
+          <h2>All in one place</h2>
+          <p>The right place to keep your credit and debit cards, boarding passes & more.</p>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer class="footer">
     <p>Footer</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="./src/main.js"></script>
 </body>
 
 </html>
