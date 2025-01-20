@@ -1,0 +1,28 @@
+/* Basic reset for margin, padding, and box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent box sizing */
+}
+
+/* Make media elements behave consistently */
+img, picture, video, canvas, svg {
+  display: block; /* Prevent inline gaps */
+  max-width: 100%; /* Responsive by default */
+}
+
+/* Inherit fonts for form elements to match surrounding text */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}

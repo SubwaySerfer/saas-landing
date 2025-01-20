@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Landing</title>
+  <script src="https://unpkg.com/htmx.org"></script>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/reset.css">
+</head>
+
+<body>
+  <header class="header">
+    <p>Wallet</p>
+  </header>
+
+  <main>
+    <section class="promo">
+      <h1 class="promo-h1">SaaS Landing Page Template</h1>
+      <p class="promo-text">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+      <button class="btn"><span class="btn-text">Get started</span></button>
+      <img class="promo-img" src="assets/main-1.png" alt="main image.">
+    </section>
+    <h1>Welcome to HTMX</h1>
+    <button hx-get="components/button.html" hx-trigger="click" hx-swap="afterend">Load Button</button>
+  </main>
+
+  <footer class="footer">
+    <p>Footer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
